@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Form</title>
+  <style>
+    /* Basic styling for the form */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px #888888;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* To ensure padding and border are included in the element's total width */
+    }
+
+    button[type="submit"] {
+      background-color: blue;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Employee Information Form</h2>
+
+  <form action="/submit-employee-data" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="empid">Employee ID:</label>
+    <input type="text" id="empid" name="empid" required>
+
+    <label for="role">Role:</label>
+    <input type="text" id="role" name="role">
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

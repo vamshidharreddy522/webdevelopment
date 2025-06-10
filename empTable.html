@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Table</title>
+    <style>
+        /* CSS Styles */
+        table {
+            border-collapse: collapse; /* Combine cell borders */
+            width: 100%; /* Make the table fill the parent container */
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd; /* Add borders to cells */
+            padding: 8px; /* Add some padding */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: #f2f2f2; /* Add a lighter background to header cells */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row colors */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>EmpID</th>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123456</td>
+                <td>Smith</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>789654</td>
+                <td>Becky</td>
+                <td>Analyst</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
